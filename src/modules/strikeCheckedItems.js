@@ -21,8 +21,7 @@ const selecetedTasks = () => {
           }
           return obj;
         });
-        localStorage.setItem('todo', JSON.stringify(newar));
-        window.location.reload();
+        setValue(newar);
       } else {
         checkboxTask.classList.remove('checked');
         const newarray = todos.map((item) => {
@@ -31,10 +30,14 @@ const selecetedTasks = () => {
           }
           return item;
         });
-        localStorage.setItem('todo', JSON.stringify(newarray));
-        window.location.reload();
+        setValue(newarray);
       }
     });
   });
 };
+
+const setValue = (arr) => {
+  localStorage.setItem('todo', JSON.stringify(arr));
+window.location.reload();
+}
 export default selecetedTasks;
