@@ -1,5 +1,4 @@
 import getTodo from './getTodo.js';
-// import setTodo from "./setTodo.js";
 
 const removeTodo = (removeid) => {
   const todoList = getTodo();
