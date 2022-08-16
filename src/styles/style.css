@@ -20,12 +20,7 @@ input {
   font-size: 20px;
 }
 
-.save-todo {
-  width: 93%;
-  padding-left: 5px;
-}
-
-.checkbox-task {
+.save-todo, .checkbox-task {
   width: 93%;
   padding-left: 5px;
 }
@@ -76,11 +71,7 @@ input {
   display: none;
 }
 
-.menu {
-  float: right;
-}
-
-.refresh {
+.menu, .refresh {
   float: right;
 }
 
