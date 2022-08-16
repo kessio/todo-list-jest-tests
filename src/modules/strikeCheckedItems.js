@@ -1,5 +1,10 @@
 import getTodo from './getTodo.js';
 
+const setValue = (arr) => {
+  localStorage.setItem('todo', JSON.stringify(arr));
+  window.location.reload();
+};
+
 const selecetedTasks = () => {
   const todos = getTodo().todo;
   const checkboxes = document.querySelectorAll('input[name=checkbox]');
@@ -36,8 +41,4 @@ const selecetedTasks = () => {
   });
 };
 
-const setValue = (arr) => {
-  localStorage.setItem('todo', JSON.stringify(arr));
-window.location.reload();
-}
 export default selecetedTasks;
