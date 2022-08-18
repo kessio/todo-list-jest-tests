@@ -3,10 +3,8 @@ const selecetedTasks = (todos,isChecked, id) => {
     // const todos = getTodo().todo;
     if (isChecked) { 
         const newar = todos.map((obj) => {
-          if (id === obj.index) {
-            console.log('true',todos[id].completed)
-            todos[id].completed = isChecked;
-            console.log('true',todos[id].completed)
+          if (id === obj.index) { 
+            todos[id].completed = isChecked; 
           }
           return obj;
         }); 

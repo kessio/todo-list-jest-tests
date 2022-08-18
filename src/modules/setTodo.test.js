@@ -138,9 +138,9 @@ describe('Edit to do list operations', () => {
     setTodo(task3);
     tasksList = getTodo().todo;
     const completedTasks = tasksList.filter((item) => item.completed == true)
-    const unCompletedTasks = removeComplete(tasksList); 
+    tasksList = removeComplete(tasksList); 
     
-    unCompletedTasks.forEach(elt => {
+    tasksList.forEach(elt => {
        expect(elt.completed).toBe(false);
     })
 
