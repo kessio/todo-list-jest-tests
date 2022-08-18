@@ -37,12 +37,12 @@ class LocalStorageMock {
 
     test('should add item to local storage', () => {
       let tasksList = getTodo().todo;
-      const task = {description: 'task1', completed: false,  index: 0}
-      const task1 = {description: 'Task 2', completed: false, index: 1}
-      const task2 = {description: 'Task 3', completed: false, index: 2}
-      setTodo(task);
+      const task1 = {description: 'task1', completed: false,  index: 1}
+      const task2 = {description: 'Task 2', completed: false, index: 2}
+      const task3 = {description: 'Task 3', completed: false, index: 3}
       setTodo(task1);
       setTodo(task2);
+      setTodo(task3);
       tasksList = getTodo().todo;
       expect(tasksList.length).toBeGreaterThanOrEqual(3);
     });
@@ -60,5 +60,5 @@ class LocalStorageMock {
   */
     });
    
-    
+   
  

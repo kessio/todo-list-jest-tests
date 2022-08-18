@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660814763116" clover="3.2.0">
-  <project timestamp="1660814763116" name="All files">
+<coverage generated="1660815220998" clover="3.2.0">
+  <project timestamp="1660815220998" name="All files">
     <metrics statements="97" coveredstatements="22" conditionals="16" coveredconditionals="2" methods="21" coveredmethods="5" elements="134" coveredelements="29" complexity="0" loc="97" ncloc="97" packages="1" files="8" classes="8"/>
     <file name="clickRemoveTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\clickRemoveTodo.js">
       <metrics statements="10" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
