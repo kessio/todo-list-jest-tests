@@ -60,5 +60,36 @@ class LocalStorageMock {
   */
     });
    
-   
+    describe('check for add-delete operations', () => {
+       test('properly remove task items', () => { 
+        document.body.innerHTML = ` 
+          <div class="list-group"> 
+            <div class="list-cont"> 
+              <input type="checkbox" name="checkbox" class="checkboxlabel" > 
+              <input type="text" readonly="true" class="checkbox-task" value="Task 1" id="0"> 
+            </div>
+          </div> 
+          <div class="list-group"> 
+            <div class="list-cont"> 
+              <input type="checkbox" name="checkbox" class="checkboxlabel" > 
+              <input type="text" readonly="true" class="checkbox-task" value="Task 2" id="1"> 
+            </div> 
+          </div> 
+          <div class="list-group"> 
+            <div class="list-cont"> 
+              <input type="checkbox" name="checkbox" class="checkboxlabel" > 
+              <input type="text" readonly="true" class="checkbox-task" value="Task 3" id="2"> 
+            </div> 
+          </div>`;
+
+          let tasksList = getTodo().todo; 
+          const removeId = '2'; 
+          const removeIdInt = parseInt(removeId, 10) - 1; 
+          removeTodo(removeId); tasksList = getTodo().todo; 
+          let tasksValueElt = document.querySelectorAll('.checkbox-task')[removeIdInt + 1];  
+          expect(tasksList[removeIdInt].description).toBe('Task 3'); 
+          expect(tasksList[removeIdInt].index).toEqual(removeIdInt + 1); 
+          expect(tasksValueElt.value).toBe('Task 3');
+      }) 
+  }) 
  

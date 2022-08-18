@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660815220998" clover="3.2.0">
-  <project timestamp="1660815220998" name="All files">
+<coverage generated="1660817913206" clover="3.2.0">
+  <project timestamp="1660817913207" name="All files">
     <metrics statements="97" coveredstatements="22" conditionals="16" coveredconditionals="2" methods="21" coveredmethods="5" elements="134" coveredelements="29" complexity="0" loc="97" ncloc="97" packages="1" files="8" classes="8"/>
-    <file name="clickRemoveTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\clickRemoveTodo.js">
+    <file name="clickRemoveTodo.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/clickRemoveTodo.js">
       <metrics statements="10" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
@@ -15,7 +15,7 @@
       <line num="11" count="0" type="stmt"/>
       <line num="12" count="0" type="stmt"/>
     </file>
-    <file name="editTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\editTodo.js">
+    <file name="editTodo.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/editTodo.js">
       <metrics statements="20" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
@@ -38,7 +38,7 @@
       <line num="23" count="0" type="stmt"/>
       <line num="25" count="0" type="stmt"/>
     </file>
-    <file name="getTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\getTodo.js">
+    <file name="getTodo.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/getTodo.js">
       <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="9" type="cond" truecount="2" falsecount="0"/>
@@ -47,7 +47,7 @@
       <line num="8" count="9" type="stmt"/>
       <line num="9" count="9" type="stmt"/>
     </file>
-    <file name="removeTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\removeTodo.js">
+    <file name="removeTodo.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/removeTodo.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
@@ -56,7 +56,7 @@
       <line num="7" count="2" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
     </file>
-    <file name="renderAddedList.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\renderAddedList.js">
+    <file name="renderAddedList.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/renderAddedList.js">
       <metrics statements="9" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <line num="7" count="1" type="stmt"/>
       <line num="8" count="0" type="stmt"/>
@@ -68,14 +68,14 @@
       <line num="22" count="0" type="stmt"/>
       <line num="23" count="0" type="stmt"/>
     </file>
-    <file name="setTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\setTodo.js">
+    <file name="setTodo.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/setTodo.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="3" type="stmt"/>
       <line num="5" count="3" type="stmt"/>
       <line num="6" count="3" type="stmt"/>
     </file>
-    <file name="showEditTools.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\showEditTools.js">
+    <file name="showEditTools.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/showEditTools.js">
       <metrics statements="16" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
@@ -94,7 +94,7 @@
       <line num="19" count="0" type="stmt"/>
       <line num="21" count="0" type="stmt"/>
     </file>
-    <file name="strikeCheckedItems.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\strikeCheckedItems.js">
+    <file name="strikeCheckedItems.js" path="/home/benkis/Desktop/microverse/module 2/week 3/todo-list-best-practices-/src/modules/strikeCheckedItems.js">
       <metrics statements="26" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
