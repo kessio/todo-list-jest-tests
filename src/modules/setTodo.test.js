@@ -37,21 +37,21 @@ class LocalStorageMock {
 
     test('should add item to local storage', () => {
       let tasksList = getTodo().todo;
-      const task = {
-        description: 'task1',
-        completed: false,
-        index: 0,
-      }
+      const task = {description: 'task1', completed: false,  index: 0}
+      const task1 = {description: 'Task 2', completed: false, index: 1}
+      const task2 = {description: 'Task 3', completed: false, index: 2}
       setTodo(task);
+      setTodo(task1);
+      setTodo(task2);
       tasksList = getTodo().todo;
-      expect(tasksList.length).toBeGreaterThanOrEqual(0);
+      expect(tasksList.length).toBeGreaterThanOrEqual(3);
     });
   
     test('Get item from the local storage', () => {
       const tasksList = getTodo().todo;
-      expect(tasksList.length).toBeGreaterThanOrEqual(0);
+      expect(tasksList.length).toBeGreaterThan(0);
     });
-    console.log(getTodo().todo);
+   
   /*  test('Remove Item from Local Storage', () => {
       const tasksList = getTodo().todo;
       removeTodo(tasksList[0].index);
@@ -60,64 +60,5 @@ class LocalStorageMock {
   */
     });
    
-  
-  /* describe('Add and delete on the DOM', () => {
-
-    document.body.innerHTML = `
-    <div class="list-group">
-    <div class="list-cont">
-    <input type="checkbox" name="checkbox" class="checkboxlabel" >
-        <input type="text" readonly="true" class="checkbox-task" value="Task 1" id="0">
-        </div>
-    </div>
-    <div class="list-group">
-    <div class="list-cont">
-    <input type="checkbox" name="checkbox" class="checkboxlabel" >
-        <input type="text" readonly="true" class="checkbox-task" value="Task 2" id="1">
-        </div>
-    </div>
-    <div class="list-group">
-    <div class="list-cont">
-    <input type="checkbox" name="checkbox" class="checkboxlabel" >
-        <input type="text" readonly="true" class="checkbox-task" value="Task 3" id="2">
-        </div>
-    </div>`;
-      //tasksList = getTodo().todo;
-    //const removeId = 0;
-    //removeTodo(removeId);
-    //let todoList = getTodo().todo;
-    console.log(getTodo().todo);
-    //let tasksValueElt = document.querySelectorAll('.checkbox-task')[removeId];
-    //expect(todoList[removeId].description).toBe('Task 2');
+    
  
-   })
-  
-  
-
-  test('Remove item from DOM', () => {
-   // const tasksList = getTodo().todo;
-    //console.log(tasksList);
-    /*removeTodo(tasksList[0].index);
-    const task = document.querySelectorAll('.list-group');
-    
-})
-
-
-    /*test('Render added list to the DOM', () => {
-      const task = {
-          description: 'Todo 1',
-          completed: false,
-          index: 0,
-        };
-      renderAddedList(task);
-      const tasksContainer = document.querySelectorAll('.list-group');
-      expect(tasksContainer).toHaveLength(1);
-    })
-    8/
-  
-/*test('setTodo function exists', () => {
-    expect(setTodo).toBeDefined();
-    
-});
-*/
-
