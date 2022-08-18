@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1660812631749" clover="3.2.0">
+  <project timestamp="1660812631749" name="All files">
+    <metrics statements="97" coveredstatements="17" conditionals="16" coveredconditionals="2" methods="21" coveredmethods="2" elements="134" coveredelements="21" complexity="0" loc="97" ncloc="97" packages="1" files="8" classes="8"/>
+    <file name="clickRemoveTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\clickRemoveTodo.js">
+      <metrics statements="10" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+    </file>
+    <file name="editTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\editTodo.js">
+      <metrics statements="20" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+    </file>
+    <file name="getTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\getTodo.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+    </file>
+    <file name="removeTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\removeTodo.js">
+      <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+    </file>
+    <file name="renderAddedList.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\renderAddedList.js">
+      <metrics statements="9" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+    </file>
+    <file name="setTodo.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\setTodo.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+    </file>
+    <file name="showEditTools.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\showEditTools.js">
+      <metrics statements="16" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+    </file>
+    <file name="strikeCheckedItems.js" path="E:\Microverse\module-2\todo-list-best-practices-\src\modules\strikeCheckedItems.js">
+      <metrics statements="26" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
