@@ -1,0 +1,59 @@
+ /* describe('Add and delete on the DOM', () => {
+
+    document.body.innerHTML = `
+    <div class="list-group">
+    <div class="list-cont">
+    <input type="checkbox" name="checkbox" class="checkboxlabel" >
+        <input type="text" readonly="true" class="checkbox-task" value="Task 1" id="0">
+        </div>
+    </div>
+    <div class="list-group">
+    <div class="list-cont">
+    <input type="checkbox" name="checkbox" class="checkboxlabel" >
+        <input type="text" readonly="true" class="checkbox-task" value="Task 2" id="1">
+        </div>
+    </div>
+    <div class="list-group">
+    <div class="list-cont">
+    <input type="checkbox" name="checkbox" class="checkboxlabel" >
+        <input type="text" readonly="true" class="checkbox-task" value="Task 3" id="2">
+        </div>
+    </div>`;
+      //tasksList = getTodo().todo;
+    //const removeId = 0;
+    //removeTodo(removeId);
+    //let todoList = getTodo().todo;
+    console.log(getTodo().todo);
+    //let tasksValueElt = document.querySelectorAll('.checkbox-task')[removeId];
+    //expect(todoList[removeId].description).toBe('Task 2');
+ 
+   })
+  
+  
+
+  test('Remove item from DOM', () => {
+   // const tasksList = getTodo().todo;
+    //console.log(tasksList);
+    /*removeTodo(tasksList[0].index);
+    const task = document.querySelectorAll('.list-group');
+    
+})
+
+
+    /*test('Render added list to the DOM', () => {
+      const task = {
+          description: 'Todo 1',
+          completed: false,
+          index: 0,
+        };
+      renderAddedList(task);
+      const tasksContainer = document.querySelectorAll('.list-group');
+      expect(tasksContainer).toHaveLength(1);
+    })
+    8/
+  
+/*test('setTodo function exists', () => {
+    expect(setTodo).toBeDefined();
+    
+});
+*/

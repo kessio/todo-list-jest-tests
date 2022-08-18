@@ -45,6 +45,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@kessio_sharon](https://twitter.com/kessio_sharon)
 - LinkedIn: [sharon-kessio](https://www.linkedin.com/in/sharon-kessio-172220b5)
 
+👤  **Benjamin Kisenge**
+
+* GitHub: [@benjamin kisenge](https://github.com/iambenkis)
+* Twitter: [@benjamin kisenge](https://twitter.com/iambenkis)
+* LinkedIn: [benjamin kisenge](https://www.linkedin.com/in/ben-kisenge
+
 ## Acknowledgements
 - Acknowledge [Emilia Andrzejewska](https://www.youtube.com/watch?v=AcUd-_Yjjqg) whose to-do list project was used to create the UI of this project
 
