@@ -6,7 +6,7 @@ import getTodo from './getTodo.js';
 import removeTodo from './removeTodo.js';
 import editList from './editList.js';
 import selecetedTasks from './statusUpdate.js';
-import removeComplete from './removeCompled.js'
+import removeComplete from './removeCompled.js';
 
 jest
   .spyOn(document, 'querySelector')
@@ -109,24 +109,20 @@ describe('check for add-delete operations', () => {
 });
 
 describe('Edit to do list operations', () => {
-  
   test('Check if to do list can be edited', () => {
-    const editedData = "Task 1 has been edited"
+    const editedData = 'Task 1 has been edited';
     editList(editedData, 'input1');
     const todoList = getTodo().todo;
-   // const indexNumber = todoList
-    console.log(todoList);
     expect(todoList[todoList.length - 1].description).toBe(editedData);
-  })
+  });
 
   test('Check if completed status can be update', () => {
     const todoList = getTodo().todo;
     const isChecked = true;
     const idChecked = 1;
-    selecetedTasks(todoList, isChecked ,idChecked) 
-    console.log(todoList);
+    selecetedTasks(todoList, isChecked, idChecked);
     expect(todoList[idChecked].completed).toBe(isChecked);
-  })
+  });
 
   test('should remove completed item', () => {
     let tasksList = getTodo().todo;
@@ -137,15 +133,15 @@ describe('Edit to do list operations', () => {
     setTodo(task2);
     setTodo(task3);
     tasksList = getTodo().todo;
-    const completedTasks = tasksList.filter((item) => item.completed == true)
-    tasksList = removeComplete(tasksList); 
-    
-    tasksList.forEach(elt => {
-       expect(elt.completed).toBe(false);
-    })
+    const completedTasks = tasksList.filter((item) => item.completed === true);
+    tasksList = removeComplete(tasksList);
 
-    completedTasks.forEach(elt => {
+    tasksList.forEach((elt) => {
+      expect(elt.completed).toBe(false);
+    });
+
+    completedTasks.forEach((elt) => {
       expect(elt.completed).toBe(true);
-    }); 
+    });
   });
 });
