@@ -1,10 +1,10 @@
 {
   "name": "webpack-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "> Create a clone of [Emilia Andrzejewska](https://www.youtube.com/watch?v=AcUd-_Yjjqg) to-do list UI structure",
   "private": true,
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
@@ -57,5 +57,6 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
-  }
+  },
+  "main": "babel.config.js"
 }

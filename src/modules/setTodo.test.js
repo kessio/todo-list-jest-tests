@@ -101,6 +101,6 @@ describe('check for add-delete operations', () => {
     let idParse = tasksValueElt2[task4.index - 1].id;
     idParse = parseInt(idParse, 10);
     expect(tasksValueElt2[task4.index - 1].value).toBe('task4');
-    expect(idParse).toBe(task4.index); 
+    expect(idParse).toBe(task4.index);
   });
 });
