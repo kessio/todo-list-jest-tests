@@ -8,15 +8,12 @@ const editTodo = (inputDiv) => {
       const description = input.value;
       const inputId = input.id;
       if (description !== '') {
-      editList(description,inputId);
-      window.location.reload();
-    } else {
-      document.querySelector('.emptylist').style.display = 'block';
-    }
+        editList(description, inputId);
+        window.location.reload();
+      } else {
+        document.querySelector('.emptylist').style.display = 'block';
+      }
     }
   });
 };
 export default editTodo;
-
-
-
