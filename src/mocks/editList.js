@@ -1,4 +1,4 @@
-import getTodo from './getTodo.js';
+import getTodo from '../modules/getTodo.js';
 const editList = (description, inputId) => {
  const list = getTodo();
  const todoArray = list.todo;

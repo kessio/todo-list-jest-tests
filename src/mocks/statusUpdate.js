@@ -1,6 +1,4 @@
-// import getTodo from './getTodo.js';
-const selecetedTasks = (todos,isChecked, id) => {
-    // const todos = getTodo().todo;
+const selecetedTasks = (todos,isChecked, id) => { 
     if (isChecked) { 
         const newar = todos.map((obj) => {
           if (id === obj.index) { 

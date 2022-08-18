@@ -4,9 +4,9 @@
 import setTodo from './setTodo.js';
 import getTodo from './getTodo.js';
 import removeTodo from './removeTodo.js';
-import editList from './editList.js';
-import selecetedTasks from './statusUpdate.js';
-import removeComplete from './removeCompled.js'
+import editList from '../mocks/editList.js';
+import selecetedTasks from '../mocks/statusUpdate.js';
+import removeComplete from '../mocks/removeCompled.js'
 
 jest
   .spyOn(document, 'querySelector')
@@ -113,8 +113,7 @@ describe('Edit to do list operations', () => {
   test('Check if to do list can be edited', () => {
     const editedData = "Task 1 has been edited"
     editList(editedData, 'input1');
-    const todoList = getTodo().todo;
-   // const indexNumber = todoList
+    const todoList = getTodo().todo; 
     console.log(todoList);
     expect(todoList[todoList.length - 1].description).toBe(editedData);
   })
@@ -123,8 +122,7 @@ describe('Edit to do list operations', () => {
     const todoList = getTodo().todo;
     const isChecked = true;
     const idChecked = 1;
-    selecetedTasks(todoList, isChecked ,idChecked) 
-    console.log(todoList);
+    selecetedTasks(todoList, isChecked ,idChecked);
     expect(todoList[idChecked].completed).toBe(isChecked);
   })
 
