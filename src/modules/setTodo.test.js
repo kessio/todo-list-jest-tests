@@ -6,7 +6,7 @@ import getTodo from './getTodo.js';
 import removeTodo from './removeTodo.js';
 import editList from './editList.js';
 import selecetedTasks from './statusUpdate.js';
-
+import removeComplete from './removeCompled.js'
 
 jest
   .spyOn(document, 'querySelector')
@@ -127,4 +127,25 @@ describe('Edit to do list operations', () => {
     console.log(todoList);
     expect(todoList[idChecked].completed).toBe(isChecked);
   })
+
+  test('should remove completed item', () => {
+    let tasksList = getTodo().todo;
+    const task1 = { description: 'task1', completed: false, index: 1 };
+    const task2 = { description: 'Task 2', completed: true, index: 2 };
+    const task3 = { description: 'Task 3', completed: true, index: 3 };
+    setTodo(task1);
+    setTodo(task2);
+    setTodo(task3);
+    tasksList = getTodo().todo;
+    const completedTasks = tasksList.filter((item) => item.completed == true)
+    const unCompletedTasks = removeComplete(tasksList); 
+    
+    unCompletedTasks.forEach(elt => {
+       expect(elt.completed).toBe(false);
+    })
+
+    completedTasks.forEach(elt => {
+      expect(elt.completed).toBe(true);
+    }); 
+  });
 });
