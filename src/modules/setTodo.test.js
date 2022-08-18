@@ -31,6 +31,17 @@ class LocalStorageMock {
       delete this.store[key];
     }
   }
+
+  const templateInput = (task) => {
+    return document.body.innerHTML +=`
+    <div class="list-group"> 
+      <div class="list-cont"> 
+        <input type="checkbox" ${task.completed?'checked':''} name="checkbox" class="checkboxlabel" > 
+        <input type="text" readonly="true" class="checkbox-task" value="${task.description}" id="${task.index}"> 
+      </div>
+    </div> 
+`
+  }
   
   global.localStorage = new LocalStorageMock();
   describe('Local storage data operations', () => {
@@ -61,8 +72,7 @@ class LocalStorageMock {
     });
    
     describe('check for add-delete operations', () => {
-       test('properly remove task items', () => { 
-        document.body.innerHTML = ` 
+      document.body.innerHTML = ` 
           <div class="list-group"> 
             <div class="list-cont"> 
               <input type="checkbox" name="checkbox" class="checkboxlabel" > 
@@ -81,15 +91,30 @@ class LocalStorageMock {
               <input type="text" readonly="true" class="checkbox-task" value="Task 3" id="2"> 
             </div> 
           </div>`;
-
+       test('properly remove task items', () => {  
           let tasksList = getTodo().todo; 
           const removeId = '2'; 
           const removeIdInt = parseInt(removeId, 10) - 1; 
-          removeTodo(removeId); tasksList = getTodo().todo; 
-          let tasksValueElt = document.querySelectorAll('.checkbox-task')[removeIdInt + 1];  
+          removeTodo(removeId); 
+          tasksList = getTodo().todo; 
+          let tasksValueElt = document.querySelectorAll('.checkbox-task')[removeIdInt + 1]; 
+          const task4 = {description: 'task4', completed: false,  index: 4} 
+          let tasksValueElt2 = document.querySelectorAll('.checkbox-task');
+           console.log(tasksValueElt2.length) 
           expect(tasksList[removeIdInt].description).toBe('Task 3'); 
           expect(tasksList[removeIdInt].index).toEqual(removeIdInt + 1); 
           expect(tasksValueElt.value).toBe('Task 3');
       }) 
+
+      test('Add task items', () => {
+        
+        const task4 = {description: 'task4', completed: false,  index: 4};  
+        templateInput(task4);  
+        let tasksValueElt2 = document.querySelectorAll('.checkbox-task');
+        let idParse = tasksValueElt2[task4.index -1].id;
+        idParse = parseInt(idParse , 10);
+        expect(tasksValueElt2[task4.index - 1].value).toBe('task4');
+        expect(idParse).toBe(task4.index);    
+      })
   }) 
  
