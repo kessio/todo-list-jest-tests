@@ -89,7 +89,6 @@ describe('check for add-delete operations', () => {
     removeTodo(removeId);
     tasksList = getTodo().todo;
     const tasksValueElt = document.querySelectorAll('.checkbox-task')[removeIdInt + 1];
-    const tasksValueElt2 = document.querySelectorAll('.checkbox-task'); 
     expect(tasksList[removeIdInt].description).toBe('Task 3');
     expect(tasksList[removeIdInt].index).toEqual(removeIdInt + 1);
     expect(tasksValueElt.value).toBe('Task 3');
