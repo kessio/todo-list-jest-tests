@@ -1,19 +1,13 @@
-import editList from './editList.js';
+import getTodo from './getTodo.js';
+const editList = (description, inputId) => {
+ const list = getTodo();
+ const todoArray = list.todo;
+ const index = inputId.replace('input', '');
+ const newlist = todoArray.filter((item) => parseInt(index, 10) !== item.index);
+   const mtindex = parseInt(index, 10);
+   const todoObject = { description, completed: false, index: mtindex };
+   newlist.push(todoObject);
+   localStorage.setItem('todo', JSON.stringify(newlist));
+}
 
-const editTodo = (inputDiv) => {
-  const input = inputDiv;
-  input.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      const description = input.value;
-      const inputId = input.id;
-      if (description !== '') {
-      editList(description,inputId);
-      window.location.reload();
-    } else {
-      document.querySelector('.emptylist').style.display = 'block';
-    }
-    }
-  });
-};
-export default editTodo;
+export default editList;

@@ -4,6 +4,7 @@
 import setTodo from './setTodo.js';
 import getTodo from './getTodo.js';
 import removeTodo from './removeTodo.js';
+import editList from './editList.js';
 
 jest
   .spyOn(document, 'querySelector')
@@ -103,4 +104,16 @@ describe('check for add-delete operations', () => {
     expect(tasksValueElt2[task4.index - 1].value).toBe('task4');
     expect(idParse).toBe(task4.index);
   });
+});
+
+describe('Edit to do list operations', () => {
+  
+  test('Check if to do list can be edited', () => {
+    const editedData = "Task 1 has been edited"
+    editList(editedData, 'input1');
+    const todoList = getTodo().todo;
+   // const indexNumber = todoList
+    console.log(todoList);
+    //expect(todoList[indexNumber].description).toBe(editedData);
+  })
 });
