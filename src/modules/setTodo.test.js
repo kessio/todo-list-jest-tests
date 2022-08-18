@@ -5,6 +5,8 @@ import setTodo from './setTodo.js';
 import getTodo from './getTodo.js';
 import removeTodo from './removeTodo.js';
 import editList from './editList.js';
+import selecetedTasks from './statusUpdate.js';
+
 
 jest
   .spyOn(document, 'querySelector')
@@ -115,5 +117,14 @@ describe('Edit to do list operations', () => {
    // const indexNumber = todoList
     console.log(todoList);
     expect(todoList[todoList.length - 1].description).toBe(editedData);
+  })
+
+  test('Check if completed status can be update', () => {
+    const todoList = getTodo().todo;
+    const isChecked = true;
+    const idChecked = 1;
+    selecetedTasks(todoList, isChecked ,idChecked) 
+    console.log(todoList);
+    expect(todoList[idChecked].completed).toBe(isChecked);
   })
 });
