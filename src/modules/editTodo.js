@@ -1,4 +1,4 @@
-import editList from './editList.js';
+import editList from '../mocks/editList.js';
 
 const editTodo = (inputDiv) => {
   const input = inputDiv;
