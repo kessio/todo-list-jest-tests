@@ -114,6 +114,6 @@ describe('Edit to do list operations', () => {
     const todoList = getTodo().todo;
    // const indexNumber = todoList
     console.log(todoList);
-    //expect(todoList[indexNumber].description).toBe(editedData);
+    expect(todoList[todoList.length - 1].description).toBe(editedData);
   })
 });
