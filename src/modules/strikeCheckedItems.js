@@ -2,7 +2,7 @@ import getTodo from './getTodo.js';
 
 const setValue = (arr) => {
   localStorage.setItem('todo', JSON.stringify(arr));
-  window.location.reload();
+  // window.location.reload();
 };
 
 const selecetedTasks = () => {
@@ -17,7 +17,6 @@ const selecetedTasks = () => {
       const parentdiv = box.parentElement;
       // get paragraph that contains task name
       const checkboxTask = parentdiv.children[1];
-
       if (box.checked) {
         checkboxTask.classList.add('checked');
         const newar = todos.map((obj) => {
